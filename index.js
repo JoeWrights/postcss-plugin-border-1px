@@ -9,6 +9,7 @@ module.exports = ({ ignoreCommentText = 'no' } = {}) => {
    * generate border style
    * @param {*} selector selector
    * @param {*} decl Declaration
+   * @param {*} radius { value: number; selector: string; unit: px | % }
    * @returns {string} style block for different dpr
    */
   const geneBorderCommonStyle = (selector, decl = {}, radius = {}) => {
