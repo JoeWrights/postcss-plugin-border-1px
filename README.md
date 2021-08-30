@@ -7,6 +7,7 @@
 ```css
 .foo {
   border: 1px solid red;
+  border-radius: 2px;
 }
 ```
 will be processed to:
@@ -15,6 +16,8 @@ will be processed to:
 @media (-webkit-min-device-pixel-ratio: 1), (min-device-pixel-ratio: 1) {
   .foo:after {
     border: 1px solid red;
+    -webkit-border-radius: 2px;
+	  border-radius: 2px;
     position: absolute;
     content: ' ';
     top: 0;
@@ -33,6 +36,8 @@ will be processed to:
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
   .foo:after {
     border: 1px solid red;
+    -webkit-border-radius: 4px;
+	  border-radius: 4px;
     position: absolute;
     content: ' ';
     top: 0;
@@ -50,7 +55,9 @@ will be processed to:
   
 @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
   .foo:after {
-    border:1px solid red;
+    border: 1px solid red;
+    -webkit-border-radius: 6px;
+	  border-radius: 6px;
     position: absolute;
     content: ' ';
     top: 0;
