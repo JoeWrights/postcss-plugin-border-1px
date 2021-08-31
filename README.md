@@ -71,6 +71,10 @@ will be processed to:
     pointer-events: none;
   }
 }
+
+.foo {
+  position:relative;
+}
 ```
 
 ## Usage
